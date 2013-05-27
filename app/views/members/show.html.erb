@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @member.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @member.age %>
+</p>
+
+<p>
+  <b>Favorite food:</b>
+  <%= @member.favorite_food %>
+</p>
+
+<p>
+  <b>Accepted eua:</b>
+  <%= @member.accepted_eua %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
