@@ -19,16 +19,20 @@
   <div class="field">
     <%= f.label :age %><br />
     <%= f.number_field :age %>
+    <div id="member_age_error"></div>
   </div>
   <div class="field">
     <%= f.label :favorite_food %><br />
     <%= f.text_field :favorite_food %>
+    <div id="member_favorite_food_error"></div>
   </div>
   <div class="field">
     <%= f.label :accepted_eua %><br />
     <%= f.check_box :accepted_eua %>
+    <div id="member_accepted_eua_error"></div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => 'enableOnValidatedData' %>
+    <div id="member_create_submit_error"></div>
   </div>
 <% end %>
